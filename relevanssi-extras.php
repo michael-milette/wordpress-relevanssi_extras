@@ -7,7 +7,7 @@ Version: 0.1.0
 Author: TNG Consulting Inc. (Michael Milette)
 Author URI: http://www.tngconsulting.ca/
 
-Copyright 2012-2017 TNG Consulting Inc.
+Copyright 2012-2018 TNG Consulting Inc.
 
 This script is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -99,7 +99,7 @@ function ERS_admin_sidebar_wp25() {
     if ( get_post_meta($post_ID, 'search_exclude', true) )
         echo 'checked="checked"';
     echo ' />';
-    echo '			'.__( 'DO NOT INCLUDE this page in search results', ERS_TD ).'</label>';
+    echo '			'.__( 'DO NOT INCLUDE this page in search results' ).'</label>';
     echo '		<input type="hidden" name="ERS_ctrl_present" value="1" /></p>';
     echo '		</div></div>';
     echo '	</div>';
@@ -122,7 +122,7 @@ END;
 // INIT FUNCTION
 function ERS_admin_init() {
 	// Add panels into the editing sidebar(s)
-	add_meta_box('ERS_admin_meta_box', __( 'Exclude Relevanssi Page Search', ERS_TD ), 'ERS_admin_sidebar_wp25', 'page', 'side', 'low');
+	add_meta_box('ERS_admin_meta_box', __( 'Exclude Relevanssi Page Search' ), 'ERS_admin_sidebar_wp25', 'page', 'side', 'low');
 	// Set the exclusion when the post is saved
 	add_action('save_post', 'ERS_update_exclusions');
 	// Add the CSS to the admin header

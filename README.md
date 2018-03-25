@@ -36,7 +36,7 @@ IMPORTANT: Although we expect everything to work, this ALPHA release has not bee
 
 # Requirements
 
-This plugin requires WordPress 4.1 from https://wordpress.org/
+This plugin requires WordPress 4.1+ from https://wordpress.org/
 
 [(Back to top)](#table-of-contents)
 
@@ -88,7 +88,7 @@ Dashboard > Plugins > Installed Plugins > Relevanssi Extras
 
 # Language Support
 
-This plugin only supports English language. However, this will not prevent it from working in other langages.
+This plugin only supports English language. However, this will not prevent it from working in other languages.
 
 This plugin has not been tested for right-to-left (RTL) language support.
 If you want to use this plugin with a RTL language and it doesn't work as-is,
@@ -128,7 +128,7 @@ Michael Milette - Author and Lead Developer
 
 Some of the features we are considering for future releases include:
 
-* Adding the ability to specify the number of results per page (current hard coded).
+* Adding configurable option to specify the number of results per page (current hard coded).
 * Add support for language translations for plugin strings.
 
 If you could use any of these features, or have other requirements, consider contributing or hiring us to accelerate development.
@@ -143,7 +143,7 @@ The development of this plugin was motivated through our own experience in WordP
 
 # Further Information
 
-For further information regarding the Relevansi Extras plugin for WordPress, support or to report a bug, please visit the project page at:
+For further information regarding the Relevanssi Extras plugin for WordPress, support or to report a bug, please visit the project page at:
 
 http://github.com/michael-milette/wordpress-relevanssi_extras
 
@@ -151,7 +151,7 @@ http://github.com/michael-milette/wordpress-relevanssi_extras
 
 # License
 
-Copyright © 2017 TNG Consulting Inc. - http://www.tngconsulting.ca/
+Copyright © 2017-2018 TNG Consulting Inc. - http://www.tngconsulting.ca/
 
 This file is part of Relevanssi Extras for WordPress.
 
