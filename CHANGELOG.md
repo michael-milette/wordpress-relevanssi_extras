@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2018-04-08
+### Updated
+- Fixed post exclusion issue with Relevanssi 4.0.5+.
+
 ## [0.1.1] - 2018-02-06
 ### Updated
 - Fixed compatibility issue with recent versions of Relevanssi/WordPress.

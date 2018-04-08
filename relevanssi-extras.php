@@ -23,19 +23,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-//---------------------------------------
-// Remove hyphens from Relevanssi word index
-//---------------------------------------
-function hyphensoff($str) {
+/*
+ * Purpose: Remove hyphens from Relevanssi word index
+ */
+function ERS_hyphensoff($str) {
     return str_replace('-', '', $str);
 }
-add_filter('relevanssi_remove_punctuation', 'hyphensoff', 9);
+add_filter('relevanssi_remove_punctuation', 'ERS_hyphensoff', 9);
 
-//---------------------------------------
-// Sets the number of Relevanssi search results per page.
-//---------------------------------------
-add_filter('post_limits', 'postsperpage');
-function postsperpage($limits) {
+/*
+ * Purpose: Sets the number of Relevanssi search results per page.
+ */
+add_filter('post_limits', 'ERS_postsperpage');
+function ERS_postsperpage($limits) {
 	if (is_search()) {
 		global $wp_query;
 		$wp_query->query_vars['posts_per_page'] = 10; // This is the number you want to change.
@@ -43,25 +43,25 @@ function postsperpage($limits) {
 	return $limits;
 }
 
-//---------------------------------------
-// Provides option to a page or post to exclude it from Relevanssi search results.
-// Written by Tomas Kapler - http://kapler.cz/
-// http://wordpress.org/support/topic/plugin-relevanssi-a-better-search-solved-feature-easier-selection-of-what-to-not-search
-// Notes: Searches all posts with selected custom post meta value and adds their ID's to the filter. You can modify it to your needs.
-//---------------------------------------
-add_filter('relevanssi_search_filters', 'mc_exclude_relevanssi');
-function mc_exclude_relevanssi ($values_to_filter) {
+/* ----------------------------------------------------------------------------------------------------
+ * Purpose: Provides option to a page or post to exclude it from Relevanssi search results.
+ * Updated by: Michael Milette for compatibility with Relevanssi 4.0.5+ - https://www.tngconsulting.ca
+ * Written by: Tomas Kapler - http://kapler.cz/
+ * http://wordpress.org/support/topic/plugin-relevanssi-a-better-search-solved-feature-easier-selection-of-what-to-not-search
+ */
+add_filter('relevanssi_search_filters', 'ERS_exclude_relevanssi');
+function ERS_exclude_relevanssi ($values_to_filter) {
    $atts = array(
-   'post_type' => 'any',
-   'meta_key' => 'search_exclude',
-   'meta_value' => 1,
-   'posts_per_page' => -1
+       'post_type' => 'any',
+       'meta_key' => 'search_exclude',
+       'meta_value' => 1,
+       'posts_per_page' => -1
    );
    $my_query = new WP_Query($atts);
    $myposts = $my_query->posts;
 
 	if($myposts) {
-        $values_to_filter['expost'] = explode(',',$values_to_filter['expost']);
+        $values_to_filter['expost'] = array_filter(explode(',',$values_to_filter['expost']));
         foreach ($myposts as $post) {
             $values_to_filter['expost'][] = $post->ID;
         }
@@ -69,10 +69,11 @@ function mc_exclude_relevanssi ($values_to_filter) {
     };
     return $values_to_filter;
 }
-//---------------------------------------
+// ----------------------------------------------------------------------------------------------------
 
 function ERS_update_exclusions( $post_ID ) {
-    if (! (bool) @ $_POST['ERS_ctrl_present'] ) // avoid loosing setting if time-saved.
+    // Avoid loosing setting if time-saved.
+    if (! (bool) @ $_POST['ERS_ctrl_present'] )
         return;
 
     if ( (isset($_POST['ERS_this_page_searched'])) ) {
@@ -96,11 +97,14 @@ function ERS_admin_sidebar_wp25() {
     echo '			type="checkbox" ';
     echo '			name="ERS_this_page_searched" ';
     echo '			id="ERS_this_page_searched" ';
-    if ( get_post_meta($post_ID, 'search_exclude', true) )
+    
+    if ( get_post_meta($post_ID, 'search_exclude', true) ) {
         echo 'checked="checked"';
-    echo ' />';
+    }
+    
+    echo '>';
     echo '			'.__( 'DO NOT INCLUDE this page in search results' ).'</label>';
-    echo '		<input type="hidden" name="ERS_ctrl_present" value="1" /></p>';
+    echo '		<input type="hidden" name="ERS_ctrl_present" value="1"></p>';
     echo '		</div></div>';
     echo '	</div>';
 }

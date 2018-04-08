@@ -1,7 +1,7 @@
 Relevanssi Extras plugin for WordPress
 ======================================
 ![PHP](https://img.shields.io/badge/PHP-v5.6%20%2F%20v7.0%20%2F%20v7.1-blue.svg)
-![WordPress](https://img.shields.io/badge/WordPress-v4.1%20to%20v4.8-blue.svg)
+![WordPress](https://img.shields.io/badge/WordPress-v4.1%20to%20v4.9-blue.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/michael-milette/wordpress-relevanssi_extras.svg)](https://github.com/michael-milette/wordpress-relevanssi_extras/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)](#contributing)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](#license)
