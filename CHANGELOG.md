@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2022-01-06
+### Updated
+- Release 1.0
+- Tested for compatibility with Relevanssi 4.14.6.
+- Tested for compatibility with PHP 7.4.
+- Tested for compatibility with WordPress 5.8.2.
+- Copyright notice for 2022.
+
 ## [0.1.2] - 2018-04-08
 ### Updated
 - Fixed post exclusion issue with Relevanssi 4.0.5+.

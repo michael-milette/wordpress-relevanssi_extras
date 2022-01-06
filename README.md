@@ -1,7 +1,7 @@
 Relevanssi Extras plugin for WordPress
 ======================================
-![PHP](https://img.shields.io/badge/PHP-v5.6%20%2F%20v7.0%20%2F%20v7.1-blue.svg)
-![WordPress](https://img.shields.io/badge/WordPress-v4.1%20to%20v4.9-blue.svg)
+![PHP](https://img.shields.io/badge/PHP-v5.6%20%2F%20v7.0%20%2F%20v7.4-blue.svg)
+![WordPress](https://img.shields.io/badge/WordPress-v4.1%20to%20v5.8-blue.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/michael-milette/wordpress-relevanssi_extras.svg)](https://github.com/michael-milette/wordpress-relevanssi_extras/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)](#contributing)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](#license)
@@ -51,7 +51,7 @@ https://github.com/michael-milette/wordpress-relevanssi_extras
 
 Install the plugin, like any other plugin, to the following folder:
 
-    /wp-content/plugins/relevanssi_extras
+    /wp-content/plugins/wordpress-relevanssi_extras
 
 [(Back to top)](#table-of-contents)
 
@@ -82,7 +82,7 @@ Dashboard > Plugins > Installed Plugins > Relevanssi Extras
 
 ...and click Deactivate, and then Delete. You may also need to manually delete the following folder:
 
-    /wp-content/plugins/relevanssi_extras
+    /wp-content/plugins/wordpress-relevanssi_extras
 
 [(Back to top)](#table-of-contents)
 
@@ -151,7 +151,7 @@ http://github.com/michael-milette/wordpress-relevanssi_extras
 
 # License
 
-Copyright © 2017-2018 TNG Consulting Inc. - http://www.tngconsulting.ca/
+Copyright © 2017-2021 TNG Consulting Inc. - http://www.tngconsulting.ca/
 
 This file is part of Relevanssi Extras for WordPress.
 

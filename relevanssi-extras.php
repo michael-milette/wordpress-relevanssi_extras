@@ -3,22 +3,18 @@
 Plugin Name: Relevanssi Extras
 Plugin URI: http://tngconsulting.ca
 Description: Includes hyphen removal, search results per page and exclude from results.
-Version: 0.1.0
+Version: 1.0
 Author: TNG Consulting Inc. (Michael Milette)
 Author URI: http://www.tngconsulting.ca/
-
-Copyright 2012-2018 TNG Consulting Inc.
-
+Copyright 2012-2022 TNG Consulting Inc.
 This script is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 3 of the License, or
 (at your option) any later version.
-
 This script is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -97,11 +93,11 @@ function ERS_admin_sidebar_wp25() {
     echo '			type="checkbox" ';
     echo '			name="ERS_this_page_searched" ';
     echo '			id="ERS_this_page_searched" ';
-    
+
     if ( get_post_meta($post_ID, 'search_exclude', true) ) {
         echo 'checked="checked"';
     }
-    
+
     echo '>';
     echo '			'.__( 'DO NOT INCLUDE this page in search results' ).'</label>';
     echo '		<input type="hidden" name="ERS_ctrl_present" value="1"></p>';
@@ -134,5 +130,4 @@ function ERS_admin_init() {
 }
 
 // HOOK IT UP TO WORDPRESS
-add_action( 'admin_init', 'ERS_admin_init' )
-?>
+add_action( 'admin_init', 'ERS_admin_init' );
