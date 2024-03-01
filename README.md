@@ -1,13 +1,16 @@
 Relevanssi Extras plugin for WordPress
 ======================================
-![PHP](https://img.shields.io/badge/PHP-v5.6%20%2F%20v7.0%20%2F%20v7.4-blue.svg)
-![WordPress](https://img.shields.io/badge/WordPress-v4.1%20to%20v5.8-blue.svg)
+
+![PHP](https://img.shields.io/badge/PHP-v5.6%20to%20v8.2-blue.svg)
+![WordPress](https://img.shields.io/badge/WordPress-v4.1%20to%20v6.4-blue.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/michael-milette/wordpress-relevanssi_extras.svg)](https://github.com/michael-milette/wordpress-relevanssi_extras/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)](#contributing)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](#license)
 
 # Table of Contents
 
+- [Relevanssi Extras plugin for WordPress](#relevanssi-extras-plugin-for-wordpress)
+- [Table of Contents](#table-of-contents)
 - [Basic Overview](#basic-overview)
 - [Requirements](#requirements)
 - [Download Relevanssi Extras](#download-relevanssi-extras)
@@ -16,10 +19,15 @@ Relevanssi Extras plugin for WordPress
 - [Updating](#updating)
 - [Uninstallation](#uninstallation)
 - [Language Support](#language-support)
-- [Frequently Asked Questions (FAQ)](#faq)
+- [FAQ](#faq)
+  - [Frequently Asked Questions](#frequently-asked-questions)
+    - [Are there any security considerations?](#are-there-any-security-considerations)
+  - [Other questions](#other-questions)
 - [Contributing](#contributing)
+  - [Contributors](#contributors)
+  - [Pending Features](#pending-features)
 - [Motivation for this plugin](#motivation-for-this-plugin)
-- [Further information](#further-information)
+- [Further Information](#further-information)
 - [License](#license)
 
 # Basic Overview
@@ -30,7 +38,7 @@ Relevanssi Extras for WordPress:
 * Adds the ability to limit the number of search results per page;
 * Enable you to exclude specific pages from results.
 
-IMPORTANT: Although we expect everything to work, this ALPHA release has not been fully tested in every situation. If you find a problem, please help by reporting it in the [Bug Tracker](http://github.com/michael-milette/wordpress-relevanssi_extras/issues).
+IMPORTANT: Although we expect everything to work, this ALPHA release has not been fully tested in every situation. If you find a problem, please help by reporting it in the [Bug Tracker](https://github.com/michael-milette/wordpress-relevanssi_extras/issues).
 
 [(Back to top)](#table-of-contents)
 
@@ -57,9 +65,11 @@ Install the plugin, like any other plugin, to the following folder:
 
 # Usage
 
-IMPORANT: Although we expect everything to work, this ALPHA release has not been fully tested in every situation. If you find a problem, please help by reporting it in the [Bug Tracker](http://github.com/michael-milette/wordpress-relevanssi_extras/issues).
+Once installed and activated, Pages (not Posts) will have a new checkbox setting in the sidebar called "DO NOT INCLUDE this page in search results". It will be in a section called "Exclude Relevanssi Page Search".
 
-There are no configurable settings for this plugin at this time.
+When enabled, the page will not be included i Relevanssi search results. This is useful if you do not want a particular page to appear in search results such as a **thank you**, **payment** or other page on your site.
+
+There are no other configurable settings for this plugin at this time.
 
 [(Back to top)](#table-of-contents)
 
@@ -69,8 +79,7 @@ There are no special considerations required for updating the plugin.
 
 The first public ALPHA version was released on 2017-11-01.
 
-For more information on releases since then, see
-[CHANGELOG.md](https://github.com/michael-milette/wordpress-relevanssi_extras/blob/master/CHANGELOG.md).
+For more information on latest releases, see the [CHANGELOG.md](https://github.com/michael-milette/wordpress-relevanssi_extras/blob/master/CHANGELOG.md) file on GitHub.
 
 [(Back to top)](#table-of-contents)
 
@@ -88,13 +97,13 @@ Dashboard > Plugins > Installed Plugins > Relevanssi Extras
 
 # Language Support
 
-This plugin only supports English language. However, this will not prevent it from working in other languages.
+This plugin only supports the English language. However, this will not prevent it from working in other languages.
 
 This plugin has not been tested for right-to-left (RTL) language support.
 If you want to use this plugin with a RTL language and it doesn't work as-is,
 feel free to prepare a pull request and submit it to the project page at:
 
-http://github.com/michael-milette/wordpress-relevanssi_extras
+https://github.com/michael-milette/wordpress-relevanssi_extras
 
 [(Back to top)](#table-of-contents)
 
@@ -102,7 +111,7 @@ http://github.com/michael-milette/wordpress-relevanssi_extras
 
 ## Frequently Asked Questions
 
-IMPORANT: Although we expect everything to work, this ALPHA release has not been fully tested in every situation. If you find a problem, please help by reporting it in the [Bug Tracker](http://github.com/michael-milette/wordpress-relevanssi_extras/issues).
+IMPORTANT: Although we expect everything to work, this ALPHA release has not been fully tested in every situation. If you find a problem, please help by reporting it in the [Bug Tracker](https://github.com/michael-milette/wordpress-relevanssi_extras/issues).
 
 ### Are there any security considerations?
 
@@ -110,9 +119,7 @@ There are no known security considerations at this time.
 
 ## Other questions
 
-Got a burning question that is not covered here? If you can't find your answer, open a new issue on Github at:
-
-http://github.com/michael-milette/wordpress-relevanssi_extras/issues
+Got a burning question that is not covered here? If you can't find your answer, open a new issue on [Github](https://github.com/michael-milette/wordpress-relevanssi_extras/issues)
 
 [(Back to top)](#table-of-contents)
 
@@ -143,15 +150,13 @@ The development of this plugin was motivated through our own experience in WordP
 
 # Further Information
 
-For further information regarding the Relevanssi Extras plugin for WordPress, support or to report a bug, please visit the project page at:
-
-http://github.com/michael-milette/wordpress-relevanssi_extras
+For further information regarding the Relevanssi Extras plugin for WordPress, support or to report a bug, please visit the [project page](https://github.com/michael-milette/wordpress-relevanssi_extras).
 
 [(Back to top)](#table-of-contents)
 
 # License
 
-Copyright © 2017-2021 TNG Consulting Inc. - http://www.tngconsulting.ca/
+Copyright © 2017-2024 TNG Consulting Inc. - https://www.tngconsulting.ca/
 
 This file is part of Relevanssi Extras for WordPress.
 
@@ -166,6 +171,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Relevanssi Extras.  If not, see <http://www.gnu.org/licenses/>.
+along with Relevanssi Extras.  If not, see <https://www.gnu.org/licenses/>.
 
 [(Back to top)](#table-of-contents)
